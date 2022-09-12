@@ -1,9 +1,9 @@
 def recortar(numero, limit_inf, limit_sup):
-    if numero > limit_inf:
-        print(limit_inf, "es inferior al número a recortar")
-    elif numero < limit_sup:
-        print(limit_sup, "es superior al número a recortar")
+    if numero < limit_inf:
+        return(limit_inf, "es inferior al número a recortar")
+    elif numero > limit_sup:
+        return(limit_sup, "es superior al número a recortar")
     else:
-        print(numero)
+        return(numero)
 
-recortar(15, 5, 10)
+print(recortar(15, 5, 10))
