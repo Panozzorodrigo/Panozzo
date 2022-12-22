@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url(../Imagenes/imagen.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Tipografía ---------------------------*/
+@font-face {
+    font-family: a-galega;
+    src: url(../fuentes/a-galega.ttf)
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: a-galega;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+/* Cabezera -----------------------------*/
+#cabezera {
+    background-color: rgb(2, 122, 235);
+    height: 80px;
+    margin: 20px 0px 10px 0px;
+    border-radius: 50px 20px 20px 50px;
+    box-shadow: -5px 10px 10px rgb(0, 0, 0);
+}
+.caja_logo {
+    background-color: rgb(48, 48, 48);
+    margin: 5px 10px 5px 10px;
+    width: 99%;
+    height: 70px;
+    display: inline-flex;
+    position: relative;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50px 20px 20px 50px;
+}
+
+/* Logo -------------------------------------*/
+.texto_logo {
+    position: absolute;
+    top: 40px;
+    left: 7px;
+    font-family: a-galega;
+    font-size: 18px;
+    color: white;
+}
+
+/* Botones -------------------------------------*/
+.botones {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 95%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    width: 8%;
+  
+    display: inline-flex;
+    margin: 0px 4% 0px 4%;
+    justify-content: center;
+    align-items: center;
+    font-family: a-galega;
+    font-size: 16px;
+}
+/* Apartado de busqueda -------------------------------------*/
+.motor_busqueda {
+    height: 40px;
+    width: 290px;
+    display: inline-flex;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    font-family: a-galega;
+    font-size: 16px;
+    color: white;
+}
+.lupa {
+    margin: 5px 0px 5px 0px;
+}
+.search {
+    background-color: rgb(2, 122, 235);
+    margin: 0px 0px 0px 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+.buscador {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    padding: 8px 0px 10px 5px;
+    width: 260px;
+    height: 14px;
+    border-width: 4px 4px 4px 0px;
+    border-style: solid; 
+    border-color: rgb(255, 255, 255);
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* principal -------------------------------------*/
+#producto {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 850px;
+    border-radius: 0px 0px 20px 20px;
+    margin: 75px 350px 0px 15px;
+    border: 5px solid rgb(2, 122, 235);
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+}
+
+.text_prod {
+    font-family: monospace;
+    font-size: 17px;
+    color: white;
+    padding: 8px;
+}
+
+/* secundario -------------------------------------*/
+#nosotros {
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 850px;
+    width: 250px;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    top: 140px;
+    right: 15px;
+    margin: 35px 0px 0px 0px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+}
+
+.text_nos {
+    font-family: monospace;
+    font-size: 14px;
+    color: white;
+    padding: 8px;
+}
+/* pie de página -------------------------------------*/
+.pie {
+    background-color: rgb(12, 29, 88);
+    min-height: 450px;
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* contacto -------------------------------------*/
+#contactos {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 25px;
+    left: 35%;
+}
+
+.instagram {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.facebook {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.twitter {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* reserva -------------------------------------*/
+#reservas {
+    float: right;
+    display: inline;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 25px;
+    right: 30%;
+}
+
+.whatsapp {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.mail {
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 15px;
+}
